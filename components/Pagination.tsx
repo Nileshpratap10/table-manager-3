@@ -11,6 +11,7 @@ import {
   FormControl,
   InputLabel,
 } from '@mui/material';
+import { SelectChangeEvent } from '@mui/material/Select';
 import {
   FirstPage as FirstPageIcon,
   LastPage as LastPageIcon,
@@ -60,7 +61,8 @@ export default function Pagination() {
     dispatch(setCurrentPage(totalPages - 1));
   };
 
-  const handleRowsPerPageChange = (event: React.ChangeEvent<{ value: unknown }>) => {
+
+  const handleRowsPerPageChange = (event: SelectChangeEvent<number>) => {
     dispatch(setRowsPerPage(Number(event.target.value)));
   };
 
