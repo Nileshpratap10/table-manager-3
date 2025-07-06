@@ -69,7 +69,6 @@ import {
   Input,
   FormHelperText,
   Autocomplete,
-  DatePicker,
   TimePicker,
   DateTimePicker,
   Switch as MuiSwitch,
